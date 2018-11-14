@@ -8,11 +8,4 @@
         </li>
     </ul>
 </div>
-<div *ngIf="selected != null">
-    <h2>{{ selected.name }}</h2>
-    <div>
-        <label for="">id: </label> {{ selected.id }}
-    </div>
-    <label>name: </label>
-    <input type="text" [(ngModel)]="selected.name" placeholder="name">
-</div>
+<my-hero [hero]="selected"></my-hero>
